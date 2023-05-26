@@ -1,0 +1,24 @@
+.book-card {
+	/* width: 138px; */
+	padding: 15px;
+}
+
+.book-card .img-wrapper {
+	height: 200px;
+	width: 128px;
+}
+
+.book-card img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.book-card:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.book-author {
+	overflow-y: hidden;
+	height: 1rem;
+}

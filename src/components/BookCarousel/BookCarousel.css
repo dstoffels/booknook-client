@@ -1,0 +1,8 @@
+.carousel {
+	max-width: 100%;
+	overflow-x: auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 50px;
+}

@@ -1,35 +1,10 @@
-ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-li {
-  font-size: 1.25rem;
-}
-
-.navBar {
-  background: steelblue;
-  box-shadow: 4px 2px 5px gray;
-  color: white;
-  margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
-}
-
-.navBar button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 0.4rem 0.5rem;
-}
-
-.navBar button:hover {
-  background: white;
-  color: steelblue;
-  cursor: pointer;
-}
-
-.brand {
-  cursor: pointer;
-  font-size: 2rem;
+header {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 10px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
