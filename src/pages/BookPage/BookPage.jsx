@@ -19,7 +19,7 @@ const BookPage = ({}) => {
 	useEffect(() => fetchBook(), [book_id]);
 
 	if (book) {
-		const { title, imageLinks } = book.volumeInfo;
+		const { title, imageLinks, description } = book.volumeInfo;
 
 		const authors = book.volumeInfo.authors?.map((author) => (
 			<h4 key={`${book.id}-${author}`}>{author}</h4>
@@ -30,6 +30,7 @@ const BookPage = ({}) => {
 				<img src={imageLinks.thumbnail} alt="" />
 				<h1>{title}</h1>
 				<div>{authors}</div>
+				<div>{description}</div>
 			</div>
 		);
 	} else return null;

@@ -15,6 +15,7 @@ import Footer from './components/Footer/Footer';
 // Util Imports
 import PrivateRoute from './utils/PrivateRoute';
 import BookPage from './pages/BookPage/BookPage.jsx';
+import FavoritesPage from './pages/FavoritesPage/FavoritesPage.jsx';
 
 function App() {
 	return (
@@ -23,6 +24,14 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
+					<Route
+						path="/favorites"
+						element={
+							<PrivateRoute>
+								<FavoritesPage />
+							</PrivateRoute>
+						}
+					/>
 					<Route path="/search/:query" element={<HomePage />} />
 					<Route path="/book/:book_id" element={<BookPage />} />
 					<Route path="/register" element={<RegisterPage />} />

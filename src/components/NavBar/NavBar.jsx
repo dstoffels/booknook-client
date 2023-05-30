@@ -8,11 +8,11 @@ import Searchbar from '../Searchbar/Searchbar.jsx';
 const Navbar = ({ onSearch }) => {
 	const { logoutUser, user } = useContext(AuthContext);
 	const navigate = useNavigate();
+
 	return (
 		<header>
-			<Link to="/">
-				<div>BookNook</div>
-			</Link>
+			<Link to="/">BookNook</Link>
+			<Link to="/favorites">Favorites</Link>
 			<Searchbar onSubmit={onSearch} />
 			{user ? (
 				<button onClick={logoutUser}>Logout</button>

@@ -41,7 +41,7 @@ const HomePage = ({}) => {
 		<div>
 			<BookCarousel books={searchResults} label="Search Results" />
 			<BookCarousel books={books} label="Featured" />
-			<BookCarousel label="Favorites" />
+			{user && <BookCarousel label="Favorites" />}
 		</div>
 	);
 };
