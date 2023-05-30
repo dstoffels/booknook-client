@@ -25,6 +25,8 @@ button {
 	font-family: inherit;
 	max-width: 100px;
 	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+	transition: all 0.2s;
 }
 
 button:hover {
@@ -57,15 +59,16 @@ button:hover {
 }
 
 main {
-	padding: 0 100px;
-	padding-top: 75px;
+	padding: 75px 100px;
 }
 
-input {
+input,
+textarea {
 	display: block;
 	padding: 4px 7px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
+	width: 100%;
 }
 
 input:hover {

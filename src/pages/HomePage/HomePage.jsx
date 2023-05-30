@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 
 const HomePage = ({}) => {
 	const { query } = useParams();
-	const [user, token] = useAuth();
+	const { user, token } = useAuth();
 
 	const [books, setBooks] = useState([]);
 	const [searchResults, setSearchResults] = useState([]);
