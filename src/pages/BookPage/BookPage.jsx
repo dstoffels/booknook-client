@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import ReviewForm from '../../components/ReviewForm/ReviewForm.jsx';
 import useAuth from '../../hooks/useAuth.js';
 import Reviews from '../../components/Reviews/Reviews.jsx';
+import FavoriteBtn from '../../components/FavoriteBtn/FavoriteBtn.jsx';
 
 const BookPage = ({}) => {
 	const { book_id } = useParams();
@@ -47,7 +48,10 @@ const BookPage = ({}) => {
 
 		return (
 			<div>
-				<img src={imageLinks.thumbnail} alt="" />
+				<div className="flex justify-between align-center">
+					<img src={imageLinks.thumbnail} alt="" />
+					<FavoriteBtn book={book} bookInfo={bookInfo} fetchBookInfo={fetchBookInfo} />
+				</div>
 				<h1>{title}</h1>
 				<div>{authors}</div>
 				<h3>Avg. Rating: {bookInfo.average_rating}</h3>
